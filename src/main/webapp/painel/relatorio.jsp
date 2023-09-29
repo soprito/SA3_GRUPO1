@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="ISO-8859-1">
 <title>Insert title here</title>
 	<jsp:include page="bootstrap.jsp"></jsp:include>
 </head>
 <body>
-	<h1 style="text-align: center;">Painel Administrativo do Site Relatório</h1>
+	<h1 style="text-align: center;">Painel Administrativo do Site - Relatório</h1>
 	<jsp:include page="navbar.jsp"></jsp:include>
 </body>
 </html>
