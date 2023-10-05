@@ -60,12 +60,11 @@ public class ServletLogin extends HttpServlet {
 				redirecionar.forward(request, response);
 	 		}
 		} catch (Exception e) {
-			
+			// TODO: handle exception
 			e.printStackTrace();
 		}
 		
 		
 	}
-
 
 }
