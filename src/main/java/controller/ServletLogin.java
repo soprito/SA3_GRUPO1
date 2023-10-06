@@ -1,4 +1,4 @@
-package controller;
+	package controller;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -63,7 +63,6 @@ public class ServletLogin extends HttpServlet {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
 		
 	}
 

@@ -10,7 +10,7 @@
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="<%= request.getContextPath() %>/painel/inicio.jsp">Home</a>
+	          <a class="nav-link active" aria-current="page" href="/painel/inicio.jsp">Home</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link" href="cadastro.jsp">Cadastro</a>
@@ -34,7 +34,7 @@
 	        </li>
 	      </ul>
 	      <form class="d-flex" role="search">
-	        <a class="nav-link" href="<%= request.getContextPath() %>/ServletOi?acao=logout"><%= request.getSession().getAttribute("usuario") %> - Logout(Sair)</a>
+	        <a class="nav-link" href="<%= request.getContextPath() %>/ServletAuten?acao=logout"><%= request.getSession().getAttribute("usuario") %> - Logout(Sair)</a>
 	      </form>
 	    </div>
 	  </div>

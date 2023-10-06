@@ -13,7 +13,6 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpFilter;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
@@ -52,7 +51,7 @@ public class FilterPainel extends HttpFilter implements Filter {
 			String urlAutenticar = req.getServletPath();
 			
 			if (usuarioLogado == null && !urlAutenticar.equalsIgnoreCase("/painel/ServletAuten")) {
-				RequestDispatcher redireciona = request.getRequestDispatcher("/index.jsp?="+urlAutenticar);
+				RequestDispatcher redireciona = request.getRequestDispatcher("/login");
 				request.setAttribute("msg", "Por Favor efetue o Login!!!");
 				redireciona.forward(request, response);
 				return;
