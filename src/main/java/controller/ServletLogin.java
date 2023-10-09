@@ -19,7 +19,7 @@ public class ServletLogin extends HttpServlet {
 	private LoginRepository loginRepository = new LoginRepository();
 	
     public ServletLogin() {
-
+    	
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

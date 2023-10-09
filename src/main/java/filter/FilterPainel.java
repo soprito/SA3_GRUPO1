@@ -51,7 +51,7 @@ public class FilterPainel extends HttpFilter implements Filter {
 			String urlAutenticar = req.getServletPath();
 			
 			if (usuarioLogado == null && !urlAutenticar.equalsIgnoreCase("/painel/ServletAuten")) {
-				RequestDispatcher redireciona = request.getRequestDispatcher("/login");
+				RequestDispatcher redireciona = request.getRequestDispatcher("/index.jsp?url="+urlAutenticar);
 				request.setAttribute("msg", "Por Favor efetue o Login!!!");
 				redireciona.forward(request, response);
 				return;
