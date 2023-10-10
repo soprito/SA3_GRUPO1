@@ -17,6 +17,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @WebFilter(urlPatterns = {"/painel/*"})
+
 public class FilterPainel extends HttpFilter implements Filter {
 
 	private static Connection conn;
@@ -51,7 +52,7 @@ public class FilterPainel extends HttpFilter implements Filter {
 			String urlAutenticar = req.getServletPath();
 			
 			if (usuarioLogado == null && !urlAutenticar.equalsIgnoreCase("/painel/ServletAuten")) {
-				RequestDispatcher redireciona = request.getRequestDispatcher("/index.jsp?url="+urlAutenticar);
+				RequestDispatcher redireciona = request.getRequestDispatcher("/index.jsp?urlAutenticar");
 				request.setAttribute("msg", "Por Favor efetue o Login!!!");
 				redireciona.forward(request, response);
 				return;

@@ -7,7 +7,7 @@
 	<jsp:include page="bootstrap.jsp"></jsp:include>
 </head>
 <body>
-	<h1 style="text-align: center;">Painel Administrativo</h1>
+	<h1 style="text-align: center;">Painel Administrativo do Site</h1>
 	<jsp:include page="navbar.jsp"></jsp:include>
 	<div class="container">
 	<form action="<%= request.getContextPath() %>/ServletUsuario" method="post" id="formUsuario">

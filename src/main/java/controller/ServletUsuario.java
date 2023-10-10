@@ -35,7 +35,7 @@ public class ServletUsuario extends HttpServlet {
 				
 				userRepository.deletarUsuario(userId);
 				request.setAttribute("msg", "Excluído com Sucesso!!!");
-				request.getRequestDispatcher("painel/inicio.jsp").forward(request, response);
+				request.getRequestDispatcher("/painel/inicio.jsp").forward(request, response);
 				
 			}else if(acao != null && !acao.isEmpty() && acao.equalsIgnoreCase("deletarAjax")) {
 				
